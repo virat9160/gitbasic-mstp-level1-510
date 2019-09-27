@@ -1,0 +1,119 @@
+R&D@DESKTOP-250SEJF MINGW64 /
+$ pwd
+/
+
+R&D@DESKTOP-250SEJF MINGW64 /
+$ cd
+
+R&D@DESKTOP-250SEJF MINGW64 ~
+$ cd Desktop
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop
+$ ls
+cd/        desktop.ini  kvsw/   mammu/       Windows_10_activator/
+cprogram/  gitbasics/   kvsw1/  program.txt  Windows_10_activator.zip
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop
+$ cd gitbasics
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/R&D/Desktop/gitbasics/.git/
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+Your branch is up to date with 'gitbasics/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    abc.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ touch 123.txt
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ nano 123.txt
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ cat 123.txt
+hello world
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git add 123.txt
+warning: LF will be replaced by CRLF in 123.txt.
+The file will have its original line endings in your working directory
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git add abc.txt
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+Your branch is up to date with 'gitbasics/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    abc.txt
+
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git config user.name @mahi892
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git config user.email "mamathakarakala555@gmail.com"
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git remote add gitbasics https://github.com/mahi892/git-basics
+fatal: remote gitbasics already exists.
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git commit -m "praatice"
+[master 4e1067a] praatice
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 abc.txt
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git log
+commit 4e1067a64494147e3d5c81e918a20cad0b8a702a (HEAD -> master)
+Author: @mahi892 <mamathakarakala555@gmail.com>
+Date:   Fri Aug 30 14:22:27 2019 +0530
+
+    praatice
+
+commit 100f74b09f682c6b347719b414629e1312504562 (gitbasics/master)
+Author: @mahi892 <mamathakarakala555@gmail.com>
+Date:   Fri Aug 30 12:37:36 2019 +0530
+
+    checking
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git push -u gitbasics master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 230 bytes | 230.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/mahi892/git-basics
+   100f74b..4e1067a  master -> master
+Branch 'master' set up to track remote branch 'master' from 'gitbasics'.
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+Your branch is up to date with 'gitbasics/master'.
+
+nothing to commit, working tree clean
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$ git pull gitbasics master
+From https://github.com/mahi892/git-basics
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/gitbasics (master)
+$

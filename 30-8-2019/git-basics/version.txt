@@ -1,0 +1,146 @@
+
+R&D@DESKTOP-250SEJF MINGW64 /
+$ pwd
+/
+
+R&D@DESKTOP-250SEJF MINGW64 /
+$  cd
+
+R&D@DESKTOP-250SEJF MINGW64 ~
+$ cd Desktop
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop
+$ ls
+ cd/          'git hub commends'/   kvsw1/        versioncontrol/
+ cprogram/     gitbasics/           mammu/        Windows_10_activator/
+ desktop.ini   kvsw/                program.txt   Windows_10_activator.zip
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop
+$ cd versioncontrol
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol
+$ ls
+workflow-of-version-control.pdf
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol
+$ git init
+Initialized empty Git repository in C:/Users/R&D/Desktop/versioncontrol/.git/
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git -a
+unknown option: -a
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        workflow-of-version-control.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git add workflow-of-version-control.pdf
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ ls
+workflow-of-version-control.pdf
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   workflow-of-version-control.pdf
+
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git config user.name @mahi892
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git config user.email "mamathakarakala555@gmail.com"
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git remote add workflow-of-version https://github.com/mahi892/workflow-of-version
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git remote -v
+workflow-of-version     https://github.com/mahi892/workflow-of-version (fetch)
+workflow-of-version     https://github.com/mahi892/workflow-of-version (push)
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   workflow-of-version-control.pdf
+
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git commit -m  "read"
+[master (root-commit) 7ff0647] read
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 workflow-of-version-control.pdf
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git push -u workflow-of-version master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 539.89 KiB | 10.80 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mahi892/workflow-of-version
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'workflow-of-version'.
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git pull version
+fatal: 'version' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git push -u workflow-of-version master
+To https://github.com/mahi892/workflow-of-version
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/mahi892/workflow-of-version'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$ git pull workflow-of-version
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/mahi892/workflow-of-version
+   7ff0647..33c4b34  master     -> workflow-of-version/master
+Updating 7ff0647..33c4b34
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+R&D@DESKTOP-250SEJF MINGW64 ~/Desktop/versioncontrol (master)
+$
